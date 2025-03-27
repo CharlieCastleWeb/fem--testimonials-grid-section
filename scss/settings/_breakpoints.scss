@@ -1,0 +1,8 @@
+@use "../settings/spacing" as *;
+
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+
+$breakpoint-testimonials-sm: calc($breakpoint-sm + $spacer-xl + $spacer-xl);
+$breakpoint-testimonials-md: calc($breakpoint-md + $spacer-xl + $spacer-xl);

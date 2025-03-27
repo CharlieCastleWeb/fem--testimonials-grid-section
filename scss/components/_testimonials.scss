@@ -1,0 +1,22 @@
+@use "../settings" as *;
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: $spacer-xl;
+  margin-top: $spacer-3xl;
+  max-width: 305px;
+  width: 100%;
+
+  @media (min-width: $breakpoint-testimonials-sm) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: unset;
+    padding: $spacer-xl;
+  }
+
+  @media (min-width: $breakpoint-testimonials-md) {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: $testimonials-max-width-lg;
+  }
+}

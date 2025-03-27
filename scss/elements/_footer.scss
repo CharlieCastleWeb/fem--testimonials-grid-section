@@ -1,0 +1,14 @@
+@use "../settings" as *;
+
+footer {
+  padding: $spacer-lg;
+  text-align: center;
+  @include text-preset-4;
+
+  @media (min-width: $breakpoint-sm) {
+    margin: 0 auto;
+  }
+  a {
+    color: $c-purple-500;
+  }
+}
